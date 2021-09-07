@@ -220,6 +220,7 @@
             border-radius: 8px;
             position: relative;
             margin: 5px;
+            overflow: hidden;
 
         }
 
@@ -245,16 +246,25 @@
             text-align: center;
             font-weight: bold;
             text-transform: capitalize;
-            background-color: rgba(247, 244, 244, 0.322);
+            background-color: rgba(75, 68, 68, 0.226);
         }
 
         .photo-detail p {
             text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.185);
         }
 
         .photo-album {
             display: flex;
             flex-wrap: wrap;
+
+        }
+
+        .photo-frame:hover .photo {
+            transform: scale(1.5) skew(-30deg);
+            transition: transform 2s ease-in-out;
+        }
     </style>
 </head>
 
