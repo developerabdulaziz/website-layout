@@ -5,17 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My awesome calendart</title>
+    <title>My awesome calender</title>
     <style>
-        .calendar {
+        .calender {
             display: grid;
             grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 2em repeat(5, 1fr);
+            grid-gap: 10px;
+            height: 500px;
+        }
+
+        .date,
+        .day {
+            background-color: rgb(155, 90, 216);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            font-size: 3em;
+        }
+
+        .other-month {
+            background-color: rgb(211, 189, 132);
+        }
+
+        .day {
+            background-color: rgb(211, 189, 132);
+            font-size: 2em;
         }
     </style>
 </head>
 
 <body>
-    <div class="calendar">
+    <div class="calender">
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day">F</div>
+        <div class="day">S</div>
+        <div class="date other-month">30</div>
+        <div class="date other-month">31</div>
         <div class="date">1</div>
         <div class="date">2</div>
         <div class="date">3</div>
@@ -46,11 +77,10 @@
         <div class="date">28</div>
         <div class="date">29</div>
         <div class="date">30</div>
-        <div class="date">31</div>
-        <div class="date">32</div>
-        <div class="date">33</div>
-        <div class="date">34</div>
-        <div class="date">35</div>
+        <div class="date other-month">1</div>
+        <div class="date other-month">2</div>
+        <div class="date other-month">3</div>
+
     </div>
 </body>
 
